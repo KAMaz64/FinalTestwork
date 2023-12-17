@@ -1,0 +1,1439 @@
+user@DESKTOP-FAAVDTM MINGW64 /
+$ ssh -p geek-student64@127.0.0.1
+Bad port 'geek-student64@127.0.0.1'
+
+user@DESKTOP-FAAVDTM MINGW64 /
+$ ssh -p 8822 geek-student64@127.0.0.1
+geek-student64@127.0.0.1's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-35-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Sat Dec 16 15:16:58 2023 from 10.0.3.2
+geek-student64@geekstudent-dsk:~$ sudo su
+[sudo] password for geek-student64:
+root@geekstudent-dsk:/home/geek-student64# cat > Pets.txt
+ID      Name    Type    Date of Birth   Commands
+1       Tom     Cat     2020-11-30      Meow, Purr, Scratch
+2       Bobik   Dog     2021-01-15      Sit, Down, Fetch, Bark, Paw
+3       Polly   Bird    2015-04-25      Fly, Speak
+4       Rodney  Hamster 2023-05-16      Roll, Hide
+root@geekstudent-dsk:/home/geek-student64# cat > PackAnimals.txt
+ID      Name    Type    Date of Birth   Commands
+1       Ia      Donkey  2018-06-30      Stay, Walk, Kick
+2       Jack    Horse   2019-10-10      Trot, Canter, Gallop, Jump
+3       Ali     Camel   2013-09-18      Stay, Walk, Spit, Carry load
+root@geekstudent-dsk:/home/geek-student64# cat Pets.txt PackAnimals.txt > HumanFriends.txt
+root@geekstudent-dsk:/home/geek-student64# cat HumanFriends.txt
+ID      Name    Type    Date of Birth   Commands
+1       Tom     Cat     2020-11-30      Meow, Purr, Scratch
+2       Bobik   Dog     2021-01-15      Sit, Down, Fetch, Bark, Paw
+3       Polly   Bird    2015-04-25      Fly, Speak
+4       Rodney  Hamster 2023-05-16      Roll, Hide
+ID      Name    Type    Date of Birth   Commands
+1       Ia      Donkey  2018-06-30      Stay, Walk, Kick
+2       Jack    Horse   2019-10-10      Trot, Canter, Gallop, Jump
+3       Ali     Camel   2013-09-18      Stay, Walk, Spit, Carry load
+root@geekstudent-dsk:/home/geek-student64# mkdir GBTestwork
+root@geekstudent-dsk:/home/geek-student64# mv HumanFriens.txt GBTestwork/
+mv: cannot stat 'HumanFriens.txt': No such file or directory
+root@geekstudent-dsk:/home/geek-student64# mv HumanFriends.txt GBTestwork/
+root@geekstudent-dsk:/home/geek-student64# ls
+Desktop  Documents  Downloads  GB  GBTestwork  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  test  Videos
+root@geekstudent-dsk:/home/geek-student64# cd GBTestwork
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# ls
+HumanFriends.txt
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# cd ..
+root@geekstudent-dsk:/home/geek-student64# ^C
+root@geekstudent-dsk:/home/geek-student64# sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 051 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [547 kB]
+Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 263 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [383 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [200 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,0 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,4 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [32,4 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1 226 kB]
+Get:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [260 kB]
+Get:15 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [101 kB]
+Get:16 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [16,1 kB]
+Get:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1 250 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [200 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [520 B]
+Get:20 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [823 kB]
+Get:21 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [580 kB]
+Get:22 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [156 kB]
+Get:23 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [55,1 kB]
+Get:24 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,8 kB]
+Get:25 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]
+Get:26 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:27 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [32,8 kB]
+Get:28 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [203 kB]
+Get:29 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [520 B]
+Get:30 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 020 kB]
+Get:31 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [675 kB]
+Get:32 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [226 kB]
+Get:33 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [305 kB]
+Get:34 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22,1 kB]
+Get:35 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41,6 kB]
+Get:36 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:37 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:38 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [33,9 kB]
+Get:39 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41,7 kB]
+Get:40 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [4 932 B]
+Get:41 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24,3 kB]
+Get:42 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [13,4 kB]
+Get:43 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16,5 kB]
+Get:44 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [18,9 kB]
+Get:45 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [25,6 kB]
+Get:46 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Fetched 11,3 MB in 17s (681 kB/s)
+^Cading package lists... 80%
+root@geekstudent-dsk:/home/geek-student64# sudo apt update
+Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Hit:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Fetched 119 kB in 1s (82,1 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+145 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@geekstudent-dsk:/home/geek-student64# sudo apt install mysql-server -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7 libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-template-perl libmecab2 libprotobuf-
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server-8.0 mysql-server-core-8.0
+Suggested packages:
+  libipc-sharedcache-perl mailx tinyca
+The following NEW packages will be installed:
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7 libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-template-perl libmecab2 libprotobuf-
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0
+0 upgraded, 20 newly installed, 0 to remove and 145 not upgraded.
+Need to get 29,3 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7 212 B]
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client-core-8.0 amd64 8.0.35-0ubuntu0.22.04.1 [2 682 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client-8.0 amd64 8.0.35-0ubuntu0.22.04.1 [22,7 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libaio1 amd64 0.3.112-13build1 [7 176 B]
+Get:5 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-1build3 [93,9 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7 642 B]
+Get:7 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libmecab2 amd64 0.996-14build9 [199 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libprotobuf-lite23 amd64 3.12.4-1ubuntu7.22.04.1 [209 kB]
+Get:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-core-8.0 amd64 8.0.35-0ubuntu0.22.04.1 [17,6 MB]
+Get:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-8.0 amd64 8.0.35-0ubuntu0.22.04.1 [1 438 kB]
+Get:11 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-pm-perl all 4.54-1 [188 kB]
+Get:12 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi0ldbl amd64 2.4.2-2build2 [28,0 kB]
+Get:13 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-perl amd64 0.82+ds-1build1 [22,8 kB]
+Get:14 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-fast-perl all 1:2.15-1 [10,5 kB]
+Get:15 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-bin amd64 2.4.2-2build2 [11,2 kB]
+Get:16 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-template-perl all 2.97-1.1 [59,1 kB]
+Get:17 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-utils amd64 0.996-14build9 [4 850 B]
+Get:18 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6 718 kB]
+Get:19 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4 384 B]
+Get:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server all 8.0.35-0ubuntu0.22.04.1 [9 464 B]
+Fetched 29,3 MB in 32s (905 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 204015 files and directories currently installed.)
+Preparing to unpack .../0-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package mysql-client-core-8.0.
+Preparing to unpack .../1-mysql-client-core-8.0_8.0.35-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../2-mysql-client-8.0_8.0.35-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../3-libaio1_0.3.112-13build1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.112-13build1) ...
+Selecting previously unselected package libevent-core-2.1-7:amd64.
+Preparing to unpack .../4-libevent-core-2.1-7_2.1.12-stable-1build3_amd64.deb ...
+Unpacking libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) ...
+Selecting previously unselected package libevent-pthreads-2.1-7:amd64.
+Preparing to unpack .../5-libevent-pthreads-2.1-7_2.1.12-stable-1build3_amd64.deb ...
+Unpacking libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...
+Selecting previously unselected package libmecab2:amd64.
+Preparing to unpack .../6-libmecab2_0.996-14build9_amd64.deb ...
+Unpacking libmecab2:amd64 (0.996-14build9) ...
+Selecting previously unselected package libprotobuf-lite23:amd64.
+Preparing to unpack .../7-libprotobuf-lite23_3.12.4-1ubuntu7.22.04.1_amd64.deb ...
+Unpacking libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) ...
+Selecting previously unselected package mysql-server-core-8.0.
+Preparing to unpack .../8-mysql-server-core-8.0_8.0.35-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-server-core-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-8.0.
+(Reading database ... 204239 files and directories currently installed.)
+Preparing to unpack .../00-mysql-server-8.0_8.0.35-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-server-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../01-libcgi-pm-perl_4.54-1_all.deb ...
+Unpacking libcgi-pm-perl (4.54-1) ...
+Selecting previously unselected package libfcgi0ldbl:amd64.
+Preparing to unpack .../02-libfcgi0ldbl_2.4.2-2build2_amd64.deb ...
+Unpacking libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+Selecting previously unselected package libfcgi-perl:amd64.
+Preparing to unpack .../03-libfcgi-perl_0.82+ds-1build1_amd64.deb ...
+Unpacking libfcgi-perl:amd64 (0.82+ds-1build1) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../04-libcgi-fast-perl_1%3a2.15-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.15-1) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../05-libfcgi-bin_2.4.2-2build2_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2build2) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../06-libhtml-template-perl_2.97-1.1_all.deb ...
+Unpacking libhtml-template-perl (2.97-1.1) ...
+Selecting previously unselected package mecab-utils.
+Preparing to unpack .../07-mecab-utils_0.996-14build9_amd64.deb ...
+Unpacking mecab-utils (0.996-14build9) ...
+Selecting previously unselected package mecab-ipadic.
+Preparing to unpack .../08-mecab-ipadic_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mecab-ipadic-utf8.
+Preparing to unpack .../09-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../10-mysql-server_8.0.35-0ubuntu0.22.04.1_all.deb ...
+Unpacking mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+Setting up libmecab2:amd64 (0.996-14build9) ...
+Setting up mysql-client-core-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Setting up libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+Setting up libcgi-pm-perl (4.54-1) ...
+Setting up libfcgi-bin (2.4.2-2build2) ...
+Setting up libhtml-template-perl (2.97-1.1) ...
+Setting up libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) ...
+Setting up mecab-utils (0.996-14build9) ...
+Setting up libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) ...
+Setting up mysql-client-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Setting up libfcgi-perl:amd64 (0.82+ds-1build1) ...
+Setting up libaio1:amd64 (0.3.112-13build1) ...
+Setting up libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################|
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+emitting double-array: 100% |###########################################|
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################|
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up libcgi-fast-perl (1:2.15-1) ...
+Setting up mysql-server-core-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################|
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+emitting double-array: 100% |###########################################|
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################|
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up mysql-server-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 4739
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/mysql.service.
+Setting up mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+root@geekstudent-dsk:/home/geek-student64# exit
+exit
+geek-student64@geekstudent-dsk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+user@DESKTOP-FAAVDTM MINGW64 /
+$ ssh -p8822 geek-student64@127.0.0.1
+geek-student64@127.0.0.1's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-39-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Last login: Sat Dec 16 16:07:30 2023 from 10.0.3.2
+geek-student64@geekstudent-dsk:~$ sudo su
+[sudo] password for geek-student64:
+root@geekstudent-dsk:/home/geek-student64# sudo apt-get install mysql-client
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  mysql-client
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 9 354 B of archives.
+After this operation, 35,8 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client all 8.0.35-0ubuntu0.22.04.1 [9 354 B]
+Fetched 9 354 B in 1s (12,2 kB/s)
+Selecting previously unselected package mysql-client.
+(Reading database ... 204615 files and directories currently installed.)
+Preparing to unpack .../mysql-client_8.0.35-0ubuntu0.22.04.1_all.deb ...
+Unpacking mysql-client (8.0.35-0ubuntu0.22.04.1) ...
+Setting up mysql-client (8.0.35-0ubuntu0.22.04.1) ...
+root@geekstudent-dsk:/home/geek-student64# sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> help
+
+For information about MySQL products and services, visit:
+   http://www.mysql.com/
+For developer information, including the MySQL Reference Manual, visit:
+   http://dev.mysql.com/
+To buy MySQL Enterprise support, training, or other products, visit:
+   https://shop.mysql.com/
+
+List of all MySQL commands:
+Note that all text commands must be first on line and end with ';'
+?         (\?) Synonym for `help'.
+clear     (\c) Clear the current input statement.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter.
+edit      (\e) Edit command with $EDITOR.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+nopager   (\n) Disable pager, print to stdout.
+notee     (\t) Don't write into outfile.
+pager     (\P) Set PAGER [to_pager]. Print the query results via PAGER.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute an SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+system    (\!) Execute a system shell command.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+charset   (\C) Switch to another charset. Might be needed for processing binlog with multi-byte charsets.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don't show warnings after every statement.
+resetconnection(\x) Clean session context.
+query_attributes Sets string parameters (name1 value1 name2 value2 ...) for the next query to pick up.
+ssl_session_data_print Serializes the current SSL session data to stdout or file
+
+For server side help, type 'help contents'
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0,11 sec)
+
+mysql> exit
+Bye
+root@geekstudent-dsk:/home/geek-student64# sudi su
+Command 'sudi' not found, did you mean:
+  command 'sudo' from deb sudo (1.9.9-1ubuntu2.4)
+  command 'sudo' from deb sudo-ldap (1.9.9-1ubuntu2.4)
+Try: apt install <deb name>
+root@geekstudent-dsk:/home/geek-student64# sudo su
+root@geekstudent-dsk:/home/geek-student64# Kamaz_64
+Kamaz_64: command not found
+root@geekstudent-dsk:/home/geek-student64# wget https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+--2023-12-17 01:36:19--  https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.29-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 92.122.104.233, 2a02:26f0:7100:ab3::2e31, 2a02:26f0:7100:a8c::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|92.122.104.233|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2023-12-17 01:36:19 ERROR 404: Not Found.
+
+root@geekstudent-dsk:/home/geek-student64# wget https://dev.mysql.com/downloads/repo/apt/
+--2023-12-17 01:37:17--  https://dev.mysql.com/downloads/repo/apt/
+Resolving dev.mysql.com (dev.mysql.com)... 92.122.104.233, 2a02:26f0:7100:a8c::2e31, 2a02:26f0:7100:ab3::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|92.122.104.233|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24446 (24K) [text/html]
+Saving to: ‘index.html’
+
+index.html                                100%[=====================================================================================>]  23,87K  --.-KB/s    in 0,04s
+
+2023-12-17 01:37:17 (532 KB/s) - ‘index.html’ saved [24446/24446]
+
+root@geekstudent-dsk:/home/geek-student64# sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+dpkg: error: cannot access archive 'mysql-apt-config_0.8.29-1_all.deb': No such file or directory
+root@geekstudent-dsk:/home/geek-student64# wget https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+--2023-12-17 01:46:20--  https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 92.122.104.233, 2a02:26f0:7100:ab3::2e31, 2a02:26f0:7100:a8c::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|92.122.104.233|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb [following]
+--2023-12-17 01:46:21--  https://repo.mysql.com//mysql-apt-config_0.8.29-1_all.deb
+Resolving repo.mysql.com (repo.mysql.com)... 23.56.201.103, 2a02:26f0:3500:599::1d68, 2a02:26f0:3500:58a::1d68
+Connecting to repo.mysql.com (repo.mysql.com)|23.56.201.103|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18172 (18K) [application/x-debian-package]
+Saving to: ‘mysql-apt-config_0.8.29-1_all.deb’
+
+mysql-apt-config_0.8.29-1_all.deb         100%[=====================================================================================>]  17,75K  --.-KB/s    in 0,004s
+
+2023-12-17 01:46:21 (4,39 MB/s) - ‘mysql-apt-config_0.8.29-1_all.deb’ saved [18172/18172]
+
+root@geekstudent-dsk:/home/geek-student64# ls
+Desktop    Downloads  GBTestwork  Music                              PackAnimals.txt  Pictures  snap       test
+Documents  GB         index.html  mysql-apt-config_0.8.29-1_all.deb  Pets.txt         Public    Templates  Videos
+root@geekstudent-dsk:/home/geek-student64# sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+Selecting previously unselected package mysql-apt-config.
+(Reading database ... 204617 files and directories currently installed.)
+Preparing to unpack mysql-apt-config_0.8.29-1_all.deb ...
+Unpacking mysql-apt-config (0.8.29-1) ...
+Setting up mysql-apt-config (0.8.29-1) ...
+root@geekstudent-dsk:/home/geek-student64# systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2023-12-16 17:57:31 MSK; 7h ago
+    Process: 695 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre (code=exited, status=0/SUCCESS)
+   Main PID: 781 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 2144)
+     Memory: 207.6M
+        CPU: 2min 20.352s
+     CGroup: /system.slice/mysql.service
+             └─781 /usr/sbin/mysqld
+
+дек 16 17:57:24 geekstudent-dsk systemd[1]: Starting MySQL Community Server...
+дек 16 17:57:31 geekstudent-dsk systemd[1]: Started MySQL Community Server.
+root@geekstudent-dsk:/home/geek-student64# sudo dpkg -r mysql-apt-config
+(Reading database ... 204622 files and directories currently installed.)
+Removing mysql-apt-config (0.8.29-1) ...
+root@geekstudent-dsk:/home/geek-student64# sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Hit:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Fetched 119 kB in 2s (66,5 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+6 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@geekstudent-dsk:/home/geek-student64# history > command_history.txt
+root@geekstudent-dsk:/home/geek-student64# sudo apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+git is already the newest version (1:2.34.1-1ubuntu1.10).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
+root@geekstudent-dsk:/home/geek-student64# mv command_history.txt GBTestwork/
+root@geekstudent-dsk:/home/geek-student64# cd GBTestwork
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/geek-student64/GBTestwork/.git/
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git add .
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git commit -m "выполнены задания блока Операционные системы и визуализация"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@geekstudent-dsk.(none)')
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git config --global user.name "AlexMoran7"
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git commit -m "выполнены задания блока Операционные системы и визуализация"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@geekstudent-dsk.(none)')
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git config --global user.email thejetro64@gmail.com
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git config --global user.name AlexMoran7
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git config --global --list
+user.name=AlexMoran7
+user.email=thejetro64@gmail.com
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git commit -m "выполнены задания блока Операционные системы и визуализация"
+[master (root-commit) 57d907e] выполнены задания блока Операционные системы и визуализация
+ 2 files changed, 41 insertions(+)
+ create mode 100644 HumanFriends.txt
+ create mode 100644 command_history.txt
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote add origin https://github.com/AlexMoran7/Final_TestWork.git
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git branch -M main
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Username for 'https://github.com': AlexMoran7
+Password for 'https://AlexMoran7@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/AlexMoran7/Final_TestWork.git/'
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# ^C
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Username for 'https://github.com': AlexMoran7
+Password for 'https://AlexMoran7@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/AlexMoran7/Final_TestWork.git/'
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote -v
+origin  https://github.com/AlexMoran7/Final_TestWork.git (fetch)
+origin  https://github.com/AlexMoran7/Final_TestWork.git (push)
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# ^C
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git credential-cache exit
+root@geekstudent-dsk:/home/geek-student64/GBTestwork#
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Username for 'https://github.com': AlexMoran7
+Password for 'https://AlexMoran7@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/AlexMoran7/Final_TestWork.git/'
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# ssh-keygen -t rsa -b 4096 -C thejetro64@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): ssh-keygen.txt
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in ssh-keygen.txt
+Your public key has been saved in ssh-keygen.txt.pub
+The key fingerprint is:
+SHA256:HcRA0PCHyQmke1XOMKk+R4w2+7YNn7S7eoHA9+vidBQ thejetro64@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     .===+o      |
+|     . +o@.      |
+|    .. +B E      |
+|     .B.+o o     |
+|    .o.*Soo      |
+|     .+ o.o      |
+|       +o oo     |
+|       .+*oo     |
+|       o+*Oo     |
++----[SHA256]-----+
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Username for 'https://github.com': AlexMoran7
+Password for 'https://AlexMoran7@github.com':
+remote: Permission to AlexMoran7/Final_TestWork.git denied to AlexMoran7.
+fatal: unable to access 'https://github.com/AlexMoran7/Final_TestWork.git/': The requested URL returned error: 403
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote set-url origin https://AlexMoran7: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@github.com/AlexMoran7/Final_TestWork.git
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+remote: Permission to AlexMoran7/Final_TestWork.git denied to AlexMoran7.
+fatal: unable to access 'https://github.com/AlexMoran7/Final_TestWork.git/': The requested URL returned error: 403
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# cd ..
+root@geekstudent-dsk:/home/geek-student64# cat /root/.ssh/id_rsa/ssh-keygen.txt.pub
+cat: /root/.ssh/id_rsa/ssh-keygen.txt.pub: No such file or directory
+root@geekstudent-dsk:/home/geek-student64# ssh-keygen.txt.pub
+ssh-keygen.txt.pub: command not found
+root@geekstudent-dsk:/home/geek-student64# cd /root/.ssh/id_rsa
+bash: cd: /root/.ssh/id_rsa: No such file or directory
+root@geekstudent-dsk:/home/geek-student64# cd .ssh/id_rsa
+bash: cd: .ssh/id_rsa: No such file or directory
+root@geekstudent-dsk:/home/geek-student64# ls ~/.ssh
+ls: cannot access '/root/.ssh': No such file or directory
+root@geekstudent-dsk:/home/geek-student64# ssh-keygen -t rsa -b 4096 -C thejetro64@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): id_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in id_rsa
+Your public key has been saved in id_rsa.pub
+The key fingerprint is:
+SHA256:HRQqmqggABqcLVvPSFFw7nSm232Zyw3df6S50DhxDn8 thejetro64@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|+ oo+o    o.     |
+|o= +o    o       |
+|o = +o.o. .      |
+|.. oo=+. . .     |
+|o . oo  S . o .  |
+|o.    o .   +O. .|
+|.    . . . =+.+=E|
+|          o +oo.o|
+|           o ...o|
++----[SHA256]-----+
+root@geekstudent-dsk:/home/geek-student64# cat id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+root@geekstudent-dsk:/home/geek-student64# ^C
+root@geekstudent-dsk:/home/geek-student64# cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2Kw+uUttbPyv9yuYj3hzo40DDZ7+xxqTGUbyLc4Cmvh+dseSU2Gy6cVvzmgNEJRHMOBmD5TzUyWNXOqMAOZ21UIg6D8cKQWT6Wxb4RBvTaDaBx+YUYJoOakYvtwQh0jBGmX9hRSTKU4VJx3Y+XZH6/JokVa4WPbEOMz+0f0+Cu3WrCiyrvKyqO0AZEY+zw7cJy9udFcI893/IxcdHj17IlND00juoltcVMvnR32t5elxLsaKzdKprDbe+mUuGqx/ahYsYo2sS+bEcT3KAI+2XBKiDSm4qI6n5O74JOtw36jZ3jPy/aYLTWb/TcwoVvfkWskkaWi0VEAwsWzJF/MHb3coM7ZQ/rDz4gAGiGZiQBaHe0uXUAVJrFCDPd+YZ5bXvHckhPiuWPL5QbsKQnAvIIOaCmHVH2t3NpXa5rs7LDXBt6I1+uPBtsL0hUAdG+8Tyymzczc86PZOLw3jY9KduJeJxs+ywYZnK/BS6hJWNAwRceDrwNXenh395lmN8wTm8tqOBMap3tTlAegMw3sPJ3/JoRCmOX4ER9tDpWkKpxoHbnITfZC1XqD7Wy7k3o8uouM3GIv4N4nXJoxv//85hi2ydb9gSCYHwQa5PH95fi5I0p4YXOuRnv2jjgyCG870wP66qDeo3vhbGXswpFoCa189O4UAd1c18OauMTA7tlw== thejetro64@gmail.com
+root@geekstudent-dsk:/home/geek-student64# ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+root@geekstudent-dsk:/home/geek-student64# ^C
+root@geekstudent-dsk:/home/geek-student64# eval "$(ssh-agent -s)"
+Agent pid 6454
+root@geekstudent-dsk:/home/geek-student64# ssh-add id_rsa.pub
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for 'id_rsa.pub' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+root@geekstudent-dsk:/home/geek-student64# chmod 600 id_rsa.pub
+root@geekstudent-dsk:/home/geek-student64# ssh-add id_rsa.pub
+Error loading key "id_rsa.pub": error in libcrypto
+root@geekstudent-dsk:/home/geek-student64# chmod 644 id_rsa.pub
+root@geekstudent-dsk:/home/geek-student64# ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+root@geekstudent-dsk:/home/geek-student64# ssh-add id_rsa
+Identity added: id_rsa (thejetro64@gmail.com)
+root@geekstudent-dsk:/home/geek-student64# ssh -T git@github.com
+Hi AlexMoran7! You've successfully authenticated, but GitHub does not provide shell access.
+root@geekstudent-dsk:/home/geek-student64# ^C
+root@geekstudent-dsk:/home/geek-student64# cd GBTestwork
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+remote: Permission to AlexMoran7/Final_TestWork.git denied to AlexMoran7.
+fatal: unable to access 'https://github.com/AlexMoran7/Final_TestWork.git/': The requested URL returned error: 403
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote add origin git@github.com:AlexMoran7/Final_TestWork.git
+error: remote origin already exists.
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote remove origin
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git remote add origin git@github.com:AlexMoran7/Final_TestWork.git
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git branch -M main
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 973 bytes | 324.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:AlexMoran7/Final_TestWork.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> -- Создание базы данных
+umanFriends`;
+mysql> CREATE DATABASE IF NOT EXISTS `HumanFriends`;
+
+-- Использование созданной базы данных
+USE `HumanFriends`;
+
+-- Создание таблицы Pets
+CREATE TABLE IF NOT EXISTS `Pets` (
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Name` VARCHAR(255) NOT NULL,
+    `Type` VARCHAR(50) NOT NULL,
+Query OK, 1 row affected (0,13 sec)
+
+mysql>
+mysql> -- Использование созданной базы данных
+mysql> USE `HumanFriends`;
+    `DateOfBirth` DATE NOT NULL,
+Database changed
+mysql>
+mysql> -- Создание таблицы Pets
+mysql> CREATE TABLE IF NOT EXISTS `Pets` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `Name` VARCHAR(255) NOT NULL,
+    ->     `Type` VARCHAR(50) NOT NULL,
+    ->     `DateOfBirth` DATE NOT NULL,
+    ->     `Commands` VARCHAR(255) NOT NULL
+    -> );
+-- Вставка данных в таблицу Pets
+INSERT INTO `Pets` (`Name`, `Type`, `DateOfBirth`, `Commands`) VALUES
+    ('Bob', 'Dog', '2019-01-01', 'sit,stay,bark,down,fetch'),
+    ('Lessie', 'Dog', '2019-02-15', 'sit,stay,bark,down,fetch'),
+    ('Buddy', 'Dog', '2019-03-30', 'sit,stay,bark,down,fetch'),
+    ('Tom', 'Cat', '2018-02-20', 'meow,purr,scratch'),
+    ('Selim', 'Cat', '2018-04-10', 'meow,purr,scratch'),
+    ('Cuddles', 'Cat', '2018-06-25', 'meow,purr,scratch'),
+    ('Hammy', 'Hamster', '2022-05-05', 'roll,spin,hide'),
+    ('Peanut', 'Hamster', '2022-07-12', 'roll,spin,hide'),
+    ('Polly', 'Bird', '2010-08-18', 'fly,sing,talk'),
+    ('Kesha', 'Bird', '2010-11-25', 'fly,sing,talk');
+
+-- Создание таблицQuery OK, 0 rows affected (0,25 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Pets
+mysql> INSERT INTO `Pets` (`Name`, `Type`, `DateOfBirth`, `Commands`) VALUES
+    ->     ('Bob', 'Dog', '2019-01-01', 'sit,stay,bark,down,fetch'),
+    ->     ('Lessie', 'Dog', '2019-02-15', 'sit,stay,bark,down,fetch'),
+    ->     ('Buddy', 'Dog', '2019-03-30', 'sit,stay,bark,down,fetch'),
+    ->     ('Tom', 'Cat', '2018-02-20', 'meow,purr,scratch'),
+    ->     ('Selim', 'Cat', '2018-04-10', 'meow,purr,scratch'),
+    ->     ('Cuddles', 'Cat', '2018-06-25', 'meow,purr,scratch'),
+    ->     ('Hammy', 'Hamster', '2022-05-05', 'roll,spin,hide'),
+    ->     ('Peanut', 'Hamster', '2022-07-12', 'roll,spin,hide'),
+    ->     ('Polly', 'Bird', '2010-08-18', 'fly,sing,talk'),
+    ->     ('Kesha', 'Bird', '2010-11-25', 'fly,sing,talk');
+CREATE TABLE IF NOT EXISTS `PackAnimals` (
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Name` VARCHAR(255) NOT NULL,
+    `Type` VARCHAR(50) NOT NULL,
+Query OK, 10 rows affected (0,09 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы PackAnimals
+mysql> CREATE TABLE IF NOT EXISTS `PackAnimals` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `Name` VARCHAR(255) NOT NULL,
+    ->     `Type` VARCHAR(50) NOT NULL,
+    ->     `DateOfBirth` DATE NOT NULL,
+    ->     `Commands` VARCHAR(255) NOT NULL
+    -> );
+-- Вставка данных в таблицу PackAnimals
+INSERT INTO `PackAnimals` (`Name`, `Type`, `DateOfBirth`, `Commands`) VALUES
+Query OK, 0 rows affected (0,06 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу PackAnimals
+mysql> INSERT INTO `PackAnimals` (`Name`, `Type`, `DateOfBirth`, `Commands`) VALUES
+    ->     ('Jack', 'Horse', '2017-04-02', 'trot,canter,gallop,jump'),
+    ->     ('Bessy', 'Horse', '2017-06-15', 'trot,canter,gallop,jump'),
+    ->     ('Fury', 'Horse', '2017-09-22', 'trot,canter,gallop,jump'),
+    ->     ('Sahara', 'Camel', '2013-03-10', 'stay,walk,carry load,spit'),
+    ->     ('Sandy', 'Camel', '2013-05-20', 'stay,walk,carry load,spit'),
+    ->     ('Dune', 'Camel', '2013-08-01', 'stay,walk,carry load,spit'),
+    ->     ('Ia', 'Donkey', '2018-02-14', 'walk,bray,kick'),
+    ->     ('Burro', 'Donkey', '2018-04-30', 'walk,bray,kick');
+Query OK, 8 rows affected (0,01 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql> -- Создание таблицы Dogs
+mysql> CREATE TABLE IF NOT EXISTS `Dogs` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PetID` INT,
+    ->     FOREIGN KEY (`PetID`) REFERENCES `Pets`(`ID`)
+    -> );
+-- Вставка данных в таблицу Dogs
+INSERT INTO `Dogs` (`PetID`) VALUES
+    (1),
+    (2),
+Query OK, 0 rows affected (0,07 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Dogs
+mysql> INSERT INTO `Dogs` (`PetID`) VALUES
+    ->     (1),
+    ->     (2),
+    ->     (3);
+-- Создание таблицы Cats
+Query OK, 3 rows affected (0,02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы Cats
+mysql> CREATE TABLE IF NOT EXISTS `Cats` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PetID` INT,
+    ->     FOREIGN KEY (`PetID`) REFERENCES `Pets`(`ID`)
+    -> );
+
+-- Вставка данных в таблицу Cats
+INSERT INTO `Cats` (`PetID`) VALUES
+    (4),
+    (5),
+    (6);
+
+-- Создание таблицы Hamsters
+CREATE TABLE IF NOT EXISTS `Hamsters` (
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `PetID` INT,
+    FOREIGN KEY (`PetID`) REFERENCES `Pets`(`ID`)
+Query OK, 0 rows affected (0,13 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Cats
+mysql> INSERT INTO `Cats` (`PetID`) VALUES
+    ->     (4),
+    ->     (5),
+    ->     (6);
+Query OK, 3 rows affected (0,01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы Hamsters
+mysql> CREATE TABLE IF NOT EXISTS `Hamsters` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PetID` INT,
+    ->     FOREIGN KEY (`PetID`) REFERENCES `Pets`(`ID`)
+    -> );
+
+-- Вставка данных в таблицу Hamsters
+INSERT INTO `Hamsters` (`PetID`) VALUES
+    (7),
+    (8);
+
+-- Создание таблицы Birds
+CREATE TABLE IF NOT EXISTS `Birds` (
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `PetID` INT,
+Query OK, 0 rows affected (0,09 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Hamsters
+mysql> INSERT INTO `Hamsters` (`PetID`) VALUES
+    ->     (7),
+    ->     (8);
+Query OK, 2 rows affected (0,02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы Birds
+mysql> CREATE TABLE IF NOT EXISTS `Birds` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PetID` INT,
+    ->     FOREIGN KEY (`PetID`) REFERENCES `Pets`(`ID`)
+    -> );
+
+-- Вставка данных в таблицу Birds
+INSERT INTO `Birds` (`PetID`) VALUES
+    (9),
+    (10);
+
+Query OK, 0 rows affected (0,07 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Birds
+mysql> INSERT INTO `Birds` (`PetID`) VALUES
+    ->     (9),
+    ->     (10);
+-- Создание таблицы Horses
+Query OK, 2 rows affected (0,02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+CREATE TABLE IF NOT EXISTS `Horses` (
+mysql>
+mysql> -- Создание таблицы Horses
+mysql> CREATE TABLE IF NOT EXISTS `Horses` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PackAnimalID` INT,
+    ->     FOREIGN KEY (`PackAnimalID`) REFERENCES `PackAnimals`(`ID`)
+    -> );
+-- Вставка данных в таблицу Horses
+INSERT INTO `Horses` (`PackAnimalID`) VALUES
+    (1),
+    (2),
+    (3);
+
+-- Создание таблицы Camels
+CREATE TABLE IF NOT EXISTS `Camels` (
+Query OK, 0 rows affected (0,06 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Horses
+mysql> INSERT INTO `Horses` (`PackAnimalID`) VALUES
+    ->     (1),
+    ->     (2),
+    ->     (3);
+Query OK, 3 rows affected (0,02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы Camels
+mysql> CREATE TABLE IF NOT EXISTS `Camels` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PackAnimalID` INT,
+    ->     FOREIGN KEY (`PackAnimalID`) REFERENCES `PackAnimals`(`ID`)
+    -> );
+
+-- Вставка данных в таблицу Camels
+INSERT INTO `Camels` (`PackAnimalID`) VALUES
+    (4),
+    (5),
+    (6);
+
+-- Создание таблицы Donkeys
+CREATE TABLE IF NOT EXISTS `Donkeys` (
+Query OK, 0 rows affected (0,12 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Camels
+mysql> INSERT INTO `Camels` (`PackAnimalID`) VALUES
+    ->     (4),
+    ->     (5),
+    ->     (6);
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+Query OK, 3 rows affected (0,02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- Создание таблицы Donkeys
+mysql> CREATE TABLE IF NOT EXISTS `Donkeys` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `PackAnimalID` INT,
+    ->     FOREIGN KEY (`PackAnimalID`) REFERENCES `PackAnimals`(`ID`)
+    -> );
+-- Вставка данных в таблицу Donkeys
+INSERT INTO `Donkeys` (`PackAnimalID`) VALUES
+    (7),
+    (8);Query OK, 0 rows affected (0,08 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу Donkeys
+mysql> INSERT INTO `Donkeys` (`PackAnimalID`) VALUES
+    ->     (7),
+    ->     (8);
+Query OK, 2 rows affected (0,02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> -- Создание таблицы MixedHorsesDonkeys
+mysql> CREATE TABLE IF NOT EXISTS `MixedHorsesDonkeys` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `AnimalID` INT,
+    ->     `AnimalType` VARCHAR(50),
+    ->     `Name` VARCHAR(255),
+    ->     `DateOfBirth` DATE,
+    ->     `Commands` VARCHAR(255),
+    ->     FOREIGN KEY (`AnimalID`) REFERENCES `Animals`(`ID`)
+    -> );
+-- Вставка данных в таблицу MixedHorsesDonkeys
+INSERT INTO `MixedHorsesDonkeys`ERROR 1824 (HY000): Failed to open the referenced table 'Animals'
+mysql>
+mysql> -- Вставка данных в таблицу MixedHorsesDonkeys
+mysql> INSERT INTO `MixedHorsesDonkeys` (`AnimalID`, `AnimalType`, `Name`, `DateOfBirth`, `Commands`)
+    -> SELECT `ID`, 'Horse' AS `AnimalType`, `Name`, `DateOfBirth`, `Commands` FROM `Horses`
+    -> UNION
+    -> SELECT `ID`, 'Donkey' AS `AnimalType`, `Name`, `DateOfBirth`, `Commands` FROM `Donkeys`;
+ERROR 1146 (42S02): Table 'HumanFriends.MixedHorsesDonkeys' doesn't exist
+mysql>
+mysql> -- Очистка таблиц Horses и Donkeys
+mysql> DELETE FROM `Horses` WHERE `ID` IN (1, 2, 3);
+DELETE FROM `Donkeys` WHERE `ID` IN (7, 8);Query OK, 3 rows affected (0,03 sec)
+
+mysql> DELETE FROM `Donkeys` WHERE `ID` IN (7, 8);
+Query OK, 0 rows affected (0,00 sec)
+
+mysql> -- Создание таблицы YoungAnimals
+mysql> CREATE TABLE IF NOT EXISTS `YoungAnimals` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `AnimalID` INT,
+    ->     `AnimalType` VARCHAR(50),
+    ->     `Name` VARCHAR(255),
+    ->     `DateOfBirth` DATE,
+    ->     `Commands` VARCHAR(255),
+    ->     `AgeDescription` VARCHAR(50),
+    ->     FOREIGN KEY (`AnimalID`) REFERENCES `Animals`(`ID`)
+    -> );
+ERROR 1824 (HY000): Failed to open the referenced table 'Animals'
+mysql>
+mysql> -- Вставка данных в таблицу YoungAnimals
+mysql> INSERT INTO `YoungAnimals` (`AnimalID`, `AnimalType`, `Name`, `DateOfBirth`, `Commands`, `AgeDescription`)
+    -> SELECT
+    ->     `ID`,
+    ->     CASE
+    ->         WHEN `ID` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) THEN 'Pet'
+    ->         WHEN `ID` IN (11, 12, 13, 14, 15, 16, 17, 18) THEN 'PackAnimal'
+    ->     END AS `AnimalType`,
+    ->     `Name`,
+    ->     `DateOfBirth`,
+    ->     `Commands`,
+    ->     CONCAT(
+    ->         TIMESTAMPDIFF(YEAR, `DateOfBirth`, '2023-12-17'),
+    ->         ' years ',
+    ->         TIMESTAMPDIFF(MONTH, `DateOfBirth`, '2023-12-17') % 12,
+    ->         ' months'
+    ->     ) AS `AgeDescription`
+    -> FROM `Animals`
+    -> WHERE TIMESTAMPDIFF(YEAR, `DateOfBirth`, '2023-12-17') BETWEEN 1 AND 3;
+ERROR 1146 (42S02): Table 'HumanFriends.YoungAnimals' doesn't exist
+mysql> -- Создание таблицы YoungAnimals
+mysql> CREATE TABLE IF NOT EXISTS `YoungAnimals` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `AnimalID` INT,
+    ->     `AnimalType` VARCHAR(50),
+    ->     `Name` VARCHAR(255),
+    ->     `DateOfBirth` DATE,
+    ->     `Commands` VARCHAR(255),
+    ->     `AgeDescription` VARCHAR(50),
+    ->     FOREIGN KEY (`AnimalID`) REFERENCES `Pets`(`ID`)
+    -> );
+
+-- Вставка данных в таблицу YoungAnimals
+INSERT INTO `YoungAnimals` (`AnimalID`, `AnimalType`, `Name`, `DateOfBirth`, `Commands`, `AgeDescription`)
+Query OK, 0 rows affected (0,08 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу YoungAnimals
+mysql> INSERT INTO `YoungAnimals` (`AnimalID`, `AnimalType`, `Name`, `DateOfBirth`, `Commands`, `AgeDescription`)
+    -> SELECT
+    ->     `ID`,
+    ->     CASE
+    ->         WHEN `ID` IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) THEN 'Pet'
+    ->         WHEN `ID` IN (11, 12, 13, 14, 15, 16, 17, 18) THEN 'PackAnimal'
+    ->     END AS `AnimalType`,
+    ->     `Name`,
+    ->     `DateOfBirth`,
+    ->     `Commands`,
+    ->     CONCAT(
+    ->         TIMESTAMPDIFF(YEAR, `DateOfBirth`, '2023-12-17'),
+    ->         ' years ',
+    ->         TIMESTAMPDIFF(MONTH, `DateOfBirth`, '2023-12-17') % 12,
+    ->         ' months'
+    ->     ) AS `AgeDescription`
+    -> FROM `Pets`
+    -> WHERE TIMESTAMPDIFF(YEAR, `DateOfBirth`, '2023-12-17') BETWEEN 1 AND 3
+    -> UNION
+    -> SELECT
+    ->     `ID`,
+    ->     CASE
+    ->         WHEN `ID` IN (11, 12, 13, 14, 15, 16, 17, 18) THEN 'PackAnimal'
+    ->     END AS `AnimalType`,
+    ->     `Name`,
+    ->     `DateOfBirth`,
+    ->     `Commands`,
+    ->     CONCAT(
+    ->         TIMESTAMPDIFF(YEAR, `DateOfBirth`, '2023-12-17'),
+    ->         ' years ',
+    ->         TIMESTAMPDIFF(MONTH, `DateOfBirth`, '2023-12-17') % 12,
+    ->         ' months'
+    ->     ) AS `AgeDescription`
+    -> FROM `PackAnimals`;
+Query OK, 10 rows affected (0,06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> -- Создание общей таблицы AllAnimals
+mysql> CREATE TABLE IF NOT EXISTS `AllAnimals` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `Name` VARCHAR(255),
+    ->     `Category` VARCHAR(50),
+    ->     `Type` VARCHAR(50),
+    ->     `DateOfBirth` DATE,
+    ->     `Commands` VARCHAR(255)
+    -> );
+Query OK, 0 rows affected (0,07 sec)
+
+mysql>
+mysql> -- Вставка данных в таблицу AllAnimals
+mysql> INSERT INTO `AllAnimals` (`Name`, `Category`, `Type`, `DateOfBirth`, `Commands`)
+    -> SELECT
+    ->     `Name`,
+    ->     'Pets' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Dogs`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'Pets' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Cats`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'Pets' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Hamsters`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'Pets' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Birds`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'PackAnimals' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Horses`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'PackAnimals' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Camels`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'PackAnimals' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Donkeys`;
+ERROR 1054 (42S22): Unknown column 'Name' in 'field list'
+mysql> -- Создание общей таблицы AllAnimals
+mysql> CREATE TABLE IF NOT EXISTS `AllAnimals` (
+    ->     `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    ->     `Name` VARCHAR(255),
+    ->     `Type` VARCHAR(50),
+    `Category` VARCHAR(50),
+    ->     `Type` VARCHAR(50),
+    ->     `DateOfBirth` DATE,
+    ->     `Commands` VARCHAR(255)
+    `Commands` VARCHAR(255)
+    -> );
+-- Вставка данных ▒Query OK, 0 rows affected, 1 warning (0,00 sec)
+
+mysql>
+mysql> ▒ таблицу AllAnimals
+-- Вставка данных в таблицу AllAnimals
+mysql> INSERT INTO `AllAnimals` (`Name`, `Category`, `Type`, `DateOfBirth`, `Commands`)
+    -> SELECT
+    ->     `Name`,
+    ->     'Pets' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `Pets`
+    -> UNION
+    -> SELECT
+    ->     `Name`,
+    ->     'PackAnimals' AS `Category`,
+    ->     `Type`,
+    ->     `DateOfBirth`,
+    ->     `Commands`
+    -> FROM `PackAnimals`;
+Query OK, 18 rows affected (0,01 sec)
+Records: 18  Duplicates: 0  Warnings: 0
+
+mysql> SHOW DATABASES
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| HumanFriends       |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0,01 sec)
+
+mysql> exit
+Bye
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# mkdir SQL
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# mysql -- Создание общей таблицы AllAnimals
+CREATE TABLE IF NOT EXISTS `AllAnimals` (
+    `ID` INT AUTO_INCREMENT PRIMARY KEY,
+    `Name` VARCHAR(255),
+    `Category` VARCHAR(50),
+    `Type` VARCHAR(50),
+    `DateOfBirth` DATE,
+    `Commands` VARCHAR(255)
+);
+
+-- Вставка данных в таблицу AllAnimals
+INSERT INTO `AllAnimals` (`Name`, `Category`, `Type`, `DateOfBirth`, `Commands`)
+SELECT
+    `Name`,
+    'Pets' AS `Category`,
+    `Type`,
+    `DateOfBirth`,
+    `Commands`
+FROM `Pets`
+UNION
+SELECT
+    `Name`,
+    'PackAnimals' AS `Category`,
+    `Type`,
+    `DateOfBirth`,
+    `Commands`
+FROM `PackAnimals`^C
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> mysqldump -u root -p HumanFriends > /к/папке/backup.sqlH
+    -> ^C
+mysql> mysqldump -u root -p HumanFriends > home/geek-student64/GBTestwork/SQL
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysqldump -u root -p HumanFriends > home/geek-student64/GBTestwork/SQL' at line 1
+mysql> mysqldump -u root -p HumanFriends > /home/geek-student64/GBTestwork/SQL/backup.sql
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysqldump -u root -p HumanFriends > /home/geek-student64/GBTestwork/SQL/backup.s' at line 1
+mysql> exit
+Bye
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# mysqldump -u root -p HumanFriends > /home/geek-student64/GBTestwork/SQL/backup.sql
+Enter password:
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git add .
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git commit -m "выполнен блок SQL"
+[main 588c462] выполнен блок SQL
+ 3 files changed, 371 insertions(+)
+ create mode 100644 SQL/backup.sql
+ create mode 100644 ssh-keygen.txt
+ create mode 100644 ssh-keygen.txt.pub
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 5.10 KiB | 579.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:AlexMoran7/Final_TestWork.git
+   57d907e..588c462  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+root@geekstudent-dsk:/home/geek-student64/GBTestwork# exit
+exit
+root@geekstudent-dsk:/home/geek-student64# exit
+exit
+geek-student64@geekstudent-dsk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+user@DESKTOP-FAAVDTM MINGW64 /
+$ mysql -u root -p humanfriends < "E:\Учеба\GeekBrains\Итоговая контрольная_блок Специализация\backup.sql"
+bash: mysql: command not found
+
+user@DESKTOP-FAAVDTM MINGW64 /
+$ ssh -p 8822 geek-student64@127.0.0.1
+geek-student64@127.0.0.1's password:
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-39-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Last login: Sun Dec 17 01:16:32 2023 from 10.0.3.2
+geek-student64@geekstudent-dsk:~$ sudo mysql
+[sudo] password for geek-student64:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SHOW DATABASES
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| HumanFriends       |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0,01 sec)
+
+mysql> USE HumanFriends
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SELECT * FROM AllAnimals
+    -> ;
++----+---------+-------------+---------+-------------+---------------------------+
+| ID | Name    | Category    | Type    | DateOfBirth | Commands                  |
++----+---------+-------------+---------+-------------+---------------------------+
+|  1 | Bob     | Pets        | Dog     | 2019-01-01  | sit,stay,bark,down,fetch  |
+|  2 | Lessie  | Pets        | Dog     | 2019-02-15  | sit,stay,bark,down,fetch  |
+|  3 | Buddy   | Pets        | Dog     | 2019-03-30  | sit,stay,bark,down,fetch  |
+|  4 | Tom     | Pets        | Cat     | 2018-02-20  | meow,purr,scratch         |
+|  5 | Selim   | Pets        | Cat     | 2018-04-10  | meow,purr,scratch         |
+|  6 | Cuddles | Pets        | Cat     | 2018-06-25  | meow,purr,scratch         |
+|  7 | Hammy   | Pets        | Hamster | 2022-05-05  | roll,spin,hide            |
+|  8 | Peanut  | Pets        | Hamster | 2022-07-12  | roll,spin,hide            |
+|  9 | Polly   | Pets        | Bird    | 2010-08-18  | fly,sing,talk             |
+| 10 | Kesha   | Pets        | Bird    | 2010-11-25  | fly,sing,talk             |
+| 11 | Jack    | PackAnimals | Horse   | 2017-04-02  | trot,canter,gallop,jump   |
+| 12 | Bessy   | PackAnimals | Horse   | 2017-06-15  | trot,canter,gallop,jump   |
+| 13 | Fury    | PackAnimals | Horse   | 2017-09-22  | trot,canter,gallop,jump   |
+| 14 | Sahara  | PackAnimals | Camel   | 2013-03-10  | stay,walk,carry load,spit |
+| 15 | Sandy   | PackAnimals | Camel   | 2013-05-20  | stay,walk,carry load,spit |
+| 16 | Dune    | PackAnimals | Camel   | 2013-08-01  | stay,walk,carry load,spit |
+| 17 | Ia      | PackAnimals | Donkey  | 2018-02-14  | walk,bray,kick            |
+| 18 | Burro   | PackAnimals | Donkey  | 2018-04-30  | walk,bray,kick            |
++----+---------+-------------+---------+-------------+---------------------------+
+18 rows in set (0,00 sec)
+
+mysql> exit
+Bye
+geek-student64@geekstudent-dsk:~$ exit
+logout
+Connection to 127.0.0.1 closed.
